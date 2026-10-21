@@ -1,0 +1,38 @@
+# ---------- Secrets & local config (NEVER commit) ----------
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+*.pem
+*.key
+
+# ---------- Backend (Maven / Java) ----------
+backend/target/
+*.class
+*.jar
+*.war
+*.log
+.mvn/wrapper/maven-wrapper.jar
+HELP.md
+
+# ---------- Frontend (Node / Vite) ----------
+frontend/node_modules/
+frontend/dist/
+node_modules/
+dist/
+npm-debug.log*
+yarn-error.log*
+
+# ---------- IDE / OS ----------
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+*.iml
+.DS_Store
+Thumbs.db
+
+# Additional generated files
+**/target/
+**/node_modules/
